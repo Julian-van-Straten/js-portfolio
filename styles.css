@@ -1,0 +1,85 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+button:active,
+button:focus,
+button:focus:active {
+  background-image: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+h1{
+    font-size: 25px;
+}
+
+section{
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#home-section, #about-section{
+    background-color: #212121;
+}
+
+#projects-section{
+    background-color: #323232;
+}
+
+#header{
+    background-color: #212121;
+    height: 60px;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.17);
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.17);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 35px;
+}
+
+.header-links{
+    margin: 0 0 0 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    background-color: #212121;
+    border: 1px solid #14ffec;
+    padding: 5px 10px;
+    color: #14ffec;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+#switch{
+    border: 2px solid #14ffec;
+    padding: 4px 2px;
+    width: 30px;
+    height: 12px;
+    border-radius: 20px;
+}
+
+#toggle{
+    border: 2px solid #14ffec;
+    padding: 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 20px;
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+    
+}
+
+
