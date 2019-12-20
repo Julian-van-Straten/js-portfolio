@@ -5,6 +5,7 @@
     color: #f4f4f4;
     font-family: monospace;
     font-size: 16px;
+    
 }
 
 button:active,
@@ -17,15 +18,20 @@ button:focus:active {
 
 h1{
     font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 section{
-    min-height: 100vh;
+    height: 100vh;
     min-width: 100vw;
+    overflow: hidden;
 }
 
 #home-section, #about-section{
     background-color: #212121;
+    z-index: 1;
+    
+    
 }
 
 #projects-section{
@@ -42,6 +48,7 @@ section{
     justify-content: space-between;
     align-items: center;
     padding: 0 35px;
+    z-index: 20;
 }
 
 .header-links{
@@ -62,19 +69,30 @@ button{
     font-size: 12px;
 }
 
+#theme-selector-container{
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    top: 4px;
+}
+
 #switch{
+    display: inline-block;
     border: 2px solid #14ffec;
     padding: 4px 2px;
     width: 30px;
-    height: 12px;
+    height: 5px;
     border-radius: 20px;
+    position: relative;
+    top: 3px;
 }
 
 #toggle{
     border: 2px solid #14ffec;
+    background-color: #14ffec;
     padding: 0px;
-    width: 12px;
-    height: 12px;
+    width: 5px;
+    height: 5px;
     border-radius: 20px;
     position: relative;
     top: -2px;
@@ -82,4 +100,73 @@ button{
     
 }
 
+#hero-container{
+    display: block;
+    width:363px;
+    margin: auto;
+    position: relative;
+    top: 300px;
+    z-index: 30;
+}
 
+#hero-heading, #hero-paragraph{
+    display: block;
+    
+    
+}
+
+#cursor-blink{
+    color: #14ffec;
+    animation: blink;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0%, 100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
+.circles{
+    animation: falling-star;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+}
+
+@keyframes falling-star{
+    0%{
+        opacity: 0;
+        top: -100px;
+        left: 10px;
+    } 100%{
+        
+    }
+}
+
+.page-titles{
+    display: block;
+    height: 30px;
+    width: 100px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.projects-boxes{
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+#projects-container{
+    display: block;
+    text-align: center;
+}
